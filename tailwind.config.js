@@ -3,7 +3,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./**/*.html"],
+  content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
       spacing: {
@@ -15,9 +15,9 @@ module.exports = {
       colors: {
         primary: "#CAC9FF",
         secondary: "#2F2CE9",
+        darknavy: "#303B59",
         rosered: { 200: "#FFF6F6", 600: "#FF5555" },
         mustard: { 200: "#FFFBF4", 600: "#FFB21E" },
-        darknavy: "#303B59",
         grass: {
           200: "#F2FCF9",
           600: "#00BB8F",
