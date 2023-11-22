@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/images/favicon-32x32.png"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+    <title>Results Summary Component | Monica Grevious</title>
+  </head>
+  <body class="bg-slate-100 min-h-screen flex justify-center items-center">
+    <div
+      class="flex flex-col sm:flex-row justify-center items-center bg-white sm:h-[512px] sm:rounded-[32px]"
+    >
+     
+        <section
+          class="bg-gradient-to-b from-[#7755FF] to-[#2F2CE9] rounded-b-[48px] sm:rounded-[32px] text-primary pt-7 pb-10 sm:pb-0 sm:pt-0 sm:h-full sm:w-1/2"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="text-lg font-semibold text-center sm:mt-12 sm:text-2xl">
+              Your Result
+            </h1>
+            <div
+              class="flex flex-col justify-center items-center w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] rounded-full bg-gradient-to-b from-[#4D21C9] my-6 sm:my-8"
+            >
+              <div class="text-[#ffffff] text-[56px] leading-[72px] font-bold">
+                76
+              </div>
+              <div class="font-semibold">of 100</div>
+            </div>
+            <div class="space-y-2">
+              <h2 class="text-2xl font-normal text-[#ffffff] text-center sm:text-3xl">
+                Great
+              </h2>
+              <p class="mx-14 text-center text-primary sm:text-lg">
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="flex flex-col pt-6 pb-10 px-8 sm:px-10 sm:y-5 sm:py-5 bg-white sm:rounded-e-[32px] sm:w-1/2 sm:text-lg">
+          <h3 class="font-semibold mb-4 text-darknavy text-lg sm:text-2xl">Summary</h3>
+          <div class="space-y-4 text-darknavy" id="summary">
+      
+          </div>
+          <button
+            class="rounded-full text-white bg-darknavy text-lg p-3.5 mt-6 active:bg-gradient-to-b active:from-[#7755FF] active:to-[#2F2CE9] sm:hover:bg-gradient-to-b sm:hover:from-[#7755FF] sm:hover:to-[#2F2CE9]" onclick="(e)=> { e.preventDefault(); }"
+          >
+            Continue
+          </button>
+          <div class="attribution mt-10 sm:hidden">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Monica Grevious</a>.
+          </button>
+        </section>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
